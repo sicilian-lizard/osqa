@@ -4,6 +4,8 @@ import sys
 
 SITE_ID = 1
 
+# TEST Test
+
 SECRET_KEY = 'a;::qCl1mfh?avagttOJ;8f5Rr54d,9qy7;o15M2cYO75?OQo51u3LnQ;!8N.:,7'
 
 CACHE_MAX_KEY_LENGTH = 235
@@ -116,13 +118,13 @@ INSTALLED_APPS = [
     'forum',
 ]
 
-if DEBUG:
-    try:
-        import debug_toolbar
-        MIDDLEWARE_CLASSES.append('debug_toolbar.middleware.DebugToolbarMiddleware')
-        INSTALLED_APPS.append('debug_toolbar')
-    except:
-        pass
+# if DEBUG:
+#     try:
+#         import debug_toolbar
+#         MIDDLEWARE_CLASSES.append('debug_toolbar.middleware.DebugToolbarMiddleware')
+#         INSTALLED_APPS.append('debug_toolbar')
+#     except:
+#         pass
 
 try:
     import south
